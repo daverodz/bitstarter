@@ -8,6 +8,7 @@ app.get('/', function(request, response) {
   if (err) throw err;
   console.log(data);
 }),"utf-8");
+  console.log("Buffer is:"+buffer.toString('utf-8'));
   return buffer.toString("utf-8");
 });
 
